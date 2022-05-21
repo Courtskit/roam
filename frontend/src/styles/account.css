@@ -1,0 +1,14 @@
+.container{
+ display: table;
+
+}
+
+.container div{
+display: inline-table;
+}
+
+
+.main-content{
+ width: 100%;
+ 
+}

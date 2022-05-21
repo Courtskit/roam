@@ -1,0 +1,48 @@
+.listing-page {
+    background-image: url("https://images.pexels.com/photos/9754/mountains-clouds-forest-fog.jpg") !important;
+    background-color: forestgreen;
+    margin-top: -200px;
+    padding-top: 200px;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 50px;
+}
+.listing-content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    min-height: 80%;
+    /* display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center; */
+}
+
+.new-listing-content {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    min-height: 80%;
+    padding: 20px;
+}
+
+.listing-col1 {
+    padding-right: 0 !important;
+}
+
+.listing-col2 {
+    padding-left: 0 !important;
+}
+
+/* .favorite-button-on {
+    background-image: url('../static/emptyheart.png');
+    background-color: red;
+}
+
+.favorite-button-off {
+    background-image: url('../static/emptyheart.png');
+    background-color: white;
+} */
+
+#fav-button-icon {
+    width: 30px;
+    height: 30px;
+}

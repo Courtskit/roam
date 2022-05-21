@@ -1,0 +1,115 @@
+.imageGrid {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.centerContent {
+  width: 100%;
+  margin: 0 auto;
+  display: grid;
+  grid-gap: 2rem;
+  padding: 1%;
+}
+
+.imageContainer {
+  height: 6rem;
+  border-radius: 3%;
+  list-style: none;
+  box-shadow: rgb(50, 50, 93) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 2px -1px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-size: 24px;
+  font-weight: 900;
+  padding: 10px 20px;
+  text-shadow: 2px 1px 4px black;
+  letter-spacing: 0.05em;
+  width: 100%;
+}
+
+.imageContainer:hover {
+  box-shadow: rgb(50, 50, 93) 0px 5px 9px -1px, rgba(0, 0, 0, 0.3) 0px 1px 2px -1px;
+}
+
+.yosemite {
+  background-image: url("../static/yosemite.jpg");
+}
+.zion {
+  background-image: url("../static/zion.jpg");
+}
+.grandcanyon {
+  background-image: url("../static/grandcanyon.jpg");
+}
+.greatsmoky {
+  background-image: url("../static/smokeymountains.jpg");
+}
+.northcascades {
+  background-image: url("../static/northcascades.jpg");
+}
+.rockymountains {
+  background-image: url("../static/rockymountains.jpg");
+}
+
+.pageHeader {
+  display: block;
+  color: #4c5240;
+  font-weight: 300;
+  width: 80%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+  padding-bottom: 0%;
+}
+
+@media (min-width: 600px) {
+  .centerContent {
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 85%;
+  }
+  .pageHeader { 
+    font-size: 32px;
+  }
+  .imageContainer {
+    height: 8rem;
+    font-size: 28px;
+    text-shadow: 2px 1px 3px black;
+  }
+}
+@media (min-width: 900px) {
+  .centerContent { 
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 70%;
+  }
+  .pageHeader { 
+    font-size: 30px;
+  }
+  .imageContainer {
+    height: 11rem;
+    font-size: 30px;
+  }
+}
+@media (min-width: 1200px) {
+  .imageContainer {
+    height: 13rem;
+  }
+}
+@media (min-width: 1500px) {
+  .centerContent { 
+    max-width: 82%;
+  }
+  .pageHeader { 
+    font-size: 36px;
+  }
+  .imageContainer {
+    height: 15rem;
+    font-size: 38px;
+  }
+  .centerContent {
+    grid-gap: 2.5rem;
+    padding: 1.2%;
+  }
+}

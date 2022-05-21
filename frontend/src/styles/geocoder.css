@@ -1,0 +1,4 @@
+div.mapboxgl-ctrl-geocoder {
+  min-width: 100%;
+  z-index: 10;
+}

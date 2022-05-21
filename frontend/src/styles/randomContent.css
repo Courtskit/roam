@@ -1,0 +1,188 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+
+.rCmainDiv {
+  width: 100%;
+  display: block;
+}
+
+.blocksContainer {
+  display: flex;
+  margin: auto;
+  width: 80%;
+  justify-content: center;
+  padding: 2% 0% 2% 0%;
+}
+
+.rCcontainer {  
+  width: 80%;
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr;
+  grid-template-rows: .85fr 0.5fr 0.5fr;
+  gap: 26px;
+  grid-auto-flow: column dense;
+  grid-template-areas:
+    "square1 square2 square2"
+    "square3 square4 square6"
+    "square5 square5 square6";
+}
+
+section h4 {
+  color: rgb(255, 255, 255);
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-size: 36px;
+  padding: 5px 20px;
+  text-shadow: 2px 1px 3px black;
+  letter-spacing: 0.05em;
+}
+
+.square1 {
+  grid-area: square1;
+  background-image: url('../static/mountain.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3%;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  box-shadow: rgb(50, 50, 93) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.square2 {
+  grid-area: square2;
+  background-image: url('../static/capitalreef.jpeg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3%;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  box-shadow: rgb(50, 50, 93) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.square3 {
+  grid-area: square3;
+  background-image: url('../static/glamp2.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: bottom;
+  border-radius: 3%;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  box-shadow: rgb(50, 50, 93) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.square4 {
+  grid-area: square4;
+  background-image: url('../static/dontlitter.jpg');
+  background-size: 140%;
+  background-repeat: no-repeat;
+  background-position: center;
+  border-radius: 3%;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  box-shadow: rgb(50, 50, 93) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.square5 {
+  grid-area: square5;
+  background-image: url('../static/rainier.jpeg');
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-position: 80% 30%;
+  border-radius: 3%;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  height: inherit;
+  box-shadow: rgb(50, 50, 93) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.square6 {
+  grid-area: square6;
+  background-image: url('../static/glacier.jpeg');  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 90%;
+  border-radius: 3%;
+  background-clip: border-box;
+  transition: background-size 0.2s;
+  transition-timing-function: cubic-bezier(.07,1.41,.82,1.41);
+  height: 360px;
+  box-shadow: rgb(50, 50, 93) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+}
+
+.rCcontainer a:hover {
+  box-shadow: rgb(50, 50, 93) 0px 5px 9px -1px, rgba(0, 0, 0, 0.3) 0px 1px 2px -1px;
+}
+
+.exploreHeader {
+  display: block;
+  color: #4c5240;
+  font-weight: 300;
+  width: 100%;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 28px;
+  letter-spacing: 0.05em;
+}
+
+@media (min-width: 600px) {
+  .exploreHeader { 
+    font-size: 32px;
+  }
+  .rCcontainer { 
+    width: 85%;
+  }
+}
+@media (min-width: 900px) {
+  .exploreHeader { 
+    font-size: 30px;
+  }
+}
+@media (max-width: 900px) {
+  .rCcontainer { 
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+    "square1"
+    "square2"
+    "square3"
+    "square4"
+    "square5"
+    "square6";
+    width: 100%;
+  }
+  .square4 {
+    background-size: cover;
+  }
+  .square5 {
+    background-size: cover;
+  }
+  section h4 {
+    font-size: 24px;
+  }
+  .square1, .square2, .square3, .square4, .square5, .square6 {
+    height: 40px;
+  }
+}
+@media (min-width: 1200px) {
+  .rCcontainer {  
+    width: 75%;
+  }
+}
+@media (min-width: 1500px) {
+  .exploreHeader { 
+    font-size: 36px;
+  }
+  .rCcontainer {  
+    width: 80%;
+    grid-gap: 2.5rem;
+  }
+  section h4 {
+    font-size: 38px;
+  }
+}

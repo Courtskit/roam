@@ -1,0 +1,38 @@
+User
+---
+id
+first_name
+last_name
+email
+favorite_listings
+
+Listing
+---
+id
+is_boondock
+owner FK >- User.id
+title
+price
+location
+amenities
+rating
+
+Review
+---
+listing_id FK >- Listing.id
+traveler_id FK >- User.id
+review_text
+
+Amenity
+---
+id FK >-< Listing.amenities
+name
+
+Reservation
+---
+id
+traveler FK >- User.id
+listing FK >- Listing.id
+start_date
+end_date
+total
